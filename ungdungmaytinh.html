@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3> Caculator</h3>
+<form>
+    <input type="number" name="số thứ 1" id="no1" />
+    <input type="number" name="số thứ 2" id="no2" />
+    <br>
+    <br>
+    <button onclick="tinhtong()" > Addition(+)</button>
+    <button onclick="tinhhieu()"  > Subtraction(-)</button>
+    <button onclick="tinhtich()"  > Multiplication(X)</button>
+    <button onclick="tinhthuong()" > Division(/)</button>
+
+</form>
+<script>
+    function tinhtong(){
+        let a=document.getElementById("no1").value
+        let b=document.getElementById("no2").value
+        let a1=parseInt(a)
+        let b1=parseInt(b)
+        let c=a1+b1
+        alert("tổng =" + c)
+    }
+    function tinhhieu(){
+        let a=document.getElementById("no1").value
+        let b=document.getElementById("no2").value
+        let c=a-b
+        alert("hiệu =" + c)
+    } function tinhtich(){
+        let a=document.getElementById("no1").value
+        let b=document.getElementById("no2").value
+        let c=a*b
+        alert("tích =" + c)
+    } function tinhthuong(){
+        let a=document.getElementById("no1").value
+        let b=document.getElementById("no2").value
+        let c=a/b
+        alert("thương =" + c)
+    }
+
+</script>
+
+
+
+</body>
+</html>
