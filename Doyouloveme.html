@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1 align="center">Do you love me?</h1>
+<button id="btn2" onclick="display()">Yes</button>
+<button id="btn1" onmousemove="changer()" >No</button>
+</body>
+<script>
+    function changer(){
+        let b = document.getElementById("btn1");
+        b.style.marginTop= Math.random()*500 + 'px'
+        b.style.marginLeft= Math.random()*500 + 'px'
+    }
+    function display(){
+        let a = document.getElementById('btn2');
+        alert('I love you too!!!');
+
+    }
+
+
+</script>
+</html>
