@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" value="1" id="good" onclick="check1()">Good
+<br>
+<input type="checkbox" value="1" id="fast" onclick="check2()">Fast
+<br>
+<input type="checkbox" value="1" id="cheap" onclick="check3()">Cheap
+
+</body>
+    <script>
+        function check1() {
+            let value1 = document.getElementById('good').checked
+            let value2 = document.getElementById('fast').checked
+            let value3 = document.getElementById('cheap').checked
+            if (value1 == 1 && value2 == 1 && value3 == 1) {
+                document.getElementById('fast').checked = false
+            }
+        }
+        function check2() {
+            let value1 = document.getElementById('good').checked
+            let value2 = document.getElementById('fast').checked
+            let value3 = document.getElementById('cheap').checked
+            if (value1 == 1 && value2 == 1 && value3 == 1) {
+                document.getElementById('cheap').checked = false
+            }
+        }
+        function check3() {
+            let value1 = document.getElementById('good').checked
+            let value2 = document.getElementById('fast').checked
+            let value3 = document.getElementById('cheap').checked
+            if (value1 == 1 && value2 == 1 && value3 == 1) {
+                document.getElementById('good').checked = false
+            }
+        }
+    </script>
+</body>
+</html>
