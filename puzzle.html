@@ -5,24 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-<img src="31.jpg" height="232" width="480" id="img1" onclick="changer()"/>
+<img src="31.jpg" height="232" width="480" id="img1" onclick="changer1()"/>
 <br>
-<!--<img src="41.jpg" height="232" width="480" id="img2" onclick="changer()"/>-->
-
+<img src="42.jpg" height="232" width="480" id="img2" onclick="changer2()"/>
 
 </body>
 </html>
 <script>
-    let count=1;
-    function changer(){
-        if (count == 1) {
-            document.getElementById('img1').src = "1.png"
-            count = 2;
+    let count1=1;
+    let count2=1
+    function changer1(){
+
+        if (count1 == 1) {
+            document.getElementById('img1').src = "41.jpg"
+            count1 = 2;
         } else {
-            document.getElementById('img1').scr = '31.jpg'
-            count = 1;
+            document.getElementById('img1').src = '31.jpg'
+            count1 = 1;
         }
+        if (count1 == count2) alert('hoàn thành')
 
     }
+    function changer2(){
+
+        if (count2 == 1) {
+            document.getElementById('img2').src = "32.jpg"
+            count2 = 2;
+        } else {
+            document.getElementById('img2').src = '42.jpg'
+            count2 = 1;
+        }
+        if (count1 == count2) alert('hoàn thành')
+    }
+
 
 </script>
