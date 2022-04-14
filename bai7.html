@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=parseInt(prompt('Nhập số phút'))
+  let b;
+  if (a>1000) {
+    b=a*300
+    alert('Trên 1000 phút giá 300đ/phút, cước phí bằng '+b)
+  }
+  else if (a>500){
+    b=a*400
+    alert('Trên 400 phút giá 400đ/phút, cước phí bằng '+b)
+  }
+  else if (a>200){
+    b=a*650
+    alert('Trên 200 phút giá 650đ/phút, cước phí bằng ' +b)
+  } else {
+    b=a*1000
+    alert('Dưới 200 phút giá 1000đ/phút, cước phí bằng' +b)
+  }
+</script>
+</body>
+</html>
