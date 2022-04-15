@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt('Nhập thu nhập cá nhân: '))
+    let b;
+    if (a>50000000) {
+        b=a*20/100
+        alert('Thuế bằng '+b)
+    }
+    else if (a>30000000){
+        b=a*15/100
+        alert('Thuế bằng '+b)
+    }
+    else if (a>20000000){
+        b=a*10/100
+        alert('Thuế bằng ' +b)
+    } else alert('Không cần đóng thuế')
+
+
+</script>
+</body>
+</html>
