@@ -9,11 +9,11 @@
     let sotienbandau=parseInt(prompt("Nhập số tiền ban đầu: "))
     let sothangchovay=parseInt(prompt('Nhập số tháng cho vay: '))
     let laihangthang=parseInt(prompt('Nhập lãi hàng tháng'))
-    let laithang=0
-    for (let i = 0; i <sothangchovay ; i++) {
-       laithang=laithang+ (100+laihangthang))
+    let tong=sotienbandau
+    for (let i = 1; i <= sothangchovay ; i++) {
+        tong=tong*(1+laihangthang/100)
     }
-    document.write("Tổng số tiền lãi là"+ laithang)
+    document.write(tong)
 
 
 </script>
