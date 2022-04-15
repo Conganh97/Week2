@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhập a'));
+    let b = parseInt(prompt('nhập b'));
+    let c = parseInt(prompt('nhập c'));
+    let delta = b*b - 4*a*c
+    let delta1 = Math.sqrt(delta)
+    if (a = 0) {
+        if (b=0){
+            if (c=0){
+                document.write("PT vô số nghiệm")
+            } else {document.write("PT vô nghiệm")}
+        } else {document.write('Phương trình có nghiệm = ' + -c/b)}
+    } else {
+        if (delta>0) {
+            document.write("PT có nghiệm x1 = " + (-b + delta1)/(2*a) + "x2 = " +(-b-delta1)/(2*a))
+        } else {
+            if (delta=0){
+                document.write("Phương trình có nghiệm = " + -b/(2*a))
+            } else {
+                document.write("Phương trình vô nghiệm")
+            }
+        }
+    }
+</script>
+</body>
+</html>
