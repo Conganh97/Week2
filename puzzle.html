@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<img src="31.jpg" height="232" width="480" id="img1" onclick="changer1()"/>
+<img src="31.jpg" alt="không load đc" height="232" width="480" id="img1" onclick="changer1()"/>
 <br>
 <img src="42.jpg" height="232" width="480" id="img2" onclick="changer2()"/>
 
@@ -24,12 +24,11 @@
             count1 = 1;
         }
         if (count1 == count2) alert('hoàn thành')
-
     }
-    function changer2(){
+    function changer2() {
 
         if (count2 == 1) {
-            document.getElementById('img2').src = "32.jpg"
+            b = document.getElementById('img2').src = "32.jpg"
             count2 = 2;
         } else {
             document.getElementById('img2').src = '42.jpg'
@@ -37,6 +36,5 @@
         }
         if (count1 == count2) alert('hoàn thành')
     }
-
 
 </script>
